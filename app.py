@@ -91,50 +91,9 @@ elif submit3:
 
 
 
-# import base64
-# import streamlit as st
-# import os
-# import io
-# from PIL import Image
-# import pdf2image
-# import google.generativeai as genai
-# from dotenv import load_dotenv
 
-# # Load environment variables
-# load_dotenv()
 
-# # Set page configuration
-# st.set_page_config(page_title="ATS Resume Expert" )
 
-# # Google API Key configuration
-# api_key = os.getenv('GOOGLE_API_KEY')
-# if api_key is None:
-#     st.error("API key not found. Please check your .env file.")
-# else:
-#     try:
-#         genai.configure(api_key=api_key)
-#     except Exception as e:
-#         st.error(f"Failed to configure API key: {e}")
 
-# # File uploader for PDF files
-# uploaded_file = st.file_uploader("Upload your resume (PDF)...")
 
-# if uploaded_file is not None:
-#     # Process the uploaded file
-#     st.write("Processing the uploaded PDF file...")
-#     try:
-#         # Convert PDF to images using pdf2image
-#         images = pdf2image.convert_from_bytes(uploaded_file.read())
-#         for i, image in enumerate(images):
-#             st.image(image, caption=f'Page {i+1}', use_column_width=True)
 
-#         # Example of using Google Generative AI
-#         # This is a placeholder example; replace with actual usage
-#         try:
-#             response = genai.some_function()  # Replace with actual function
-#             st.write("API response:", response)
-#         except Exception as api_error:
-#             st.error(f"API request failed: {api_error}")
-
-#     except Exception as e:
-#         st.error(f"Error processing the PDF file: {e}")
